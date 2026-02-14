@@ -1,9 +1,8 @@
-document.getElementById("yesBtn").onclick = function () {
-  alert("YAYYYY 💖 I LOVE YOU FOREVER 💍🌹");
-};
+function yesClicked() {
+  document.querySelector('.container').style.display = 'none';
+  document.getElementById('yesPage').style.display = 'block';
+}
 
-document.getElementById("noBtn").onclick = function () {
-  this.style.position = "absolute";
-  this.style.top = Math.random() * window.innerHeight + "px";
-  this.style.left = Math.random() * window.innerWidth + "px";
-};
+function noClicked() {
+  alert("Awww 😭 try again please 💕");
+}
